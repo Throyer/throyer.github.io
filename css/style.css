@@ -1,32 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-body {
+nav {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    margin-top: 15vh;
-}
-
-.cell {
-    width: 100px !important;
-    height: 100px !important;
-    border: solid 1px rgb(235, 235, 235);
-    text-align: center;
-    font-size: 50pt;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.cell.win {
-    background-color: #e6ffee;
-}
-
-table.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#alert {
-    display: none;
+.card p {
+    font-family: 'Poppins', sans-serif;
 }

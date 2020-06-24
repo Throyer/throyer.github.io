@@ -1,104 +1,47 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Jogo da velha</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UniFil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <a class="navbar-brand" href="https://throyer.github.io/">
+            <i class="fas fa-laptop-code"></i>
+            Renato Henrique
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://github.com/throyer">
+                        <i class="fas fa-code-branch"></i>
+                        GitHub
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <div class="row justify-content-center mt-5 mb-5">
-            <div class="col-5 text-center">
-                <div class="alert alert-warning" id="alert">
-                    <strong id="vitoria">Vitoria</strong>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5" id="row_turn">
-            <div class="col text-center">
-                <h2>Turno de: <strong id="turn">X</strong></h2>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <table class="center shadow-sm tabuleiro">
-                    <tbody>
-                        <tr>
-                            <td class="cell" onclick="tacada(0, 0)">
-                                <div id="0-0" class="simbol"></div>
-                            </td>
-                            <td class="cell" onclick="tacada(0, 1)">
-                                <div id="0-1" class="simbol"></div>
-                            </td>
-                            <td class="cell" onclick="tacada(0, 2)">
-                                <div id="0-2" class="simbol"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cell" onclick="tacada(1, 0)">
-                                <div id="1-0" class="simbol"></div>
-                            </td>
-                            <td class="cell" onclick="tacada(1, 1)">
-                                <div id="1-1" class="simbol"></div>
-                            </td>
-                            <td class="cell" onclick="tacada(1, 2)">
-                                <div id="1-2" class="simbol"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cell" onclick="tacada(2, 0)">
-                                <div id="2-0" class="simbol"></div>
-                            </td>
-                            <td class="cell" onclick="tacada(2, 1)">
-                                <div id="2-1" class="simbol"></div>
-                            </td>
-                            <td class="cell" onclick="tacada(2, 2)">
-                                <div id="2-2" class="simbol"></div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col">
-                <p class="text-center">Trocar de símbolo</p>
-            </div>
-        </div>
-        <div class="row mt-0 justify-content-center">
-            <button onclick="toggleSimbol()"  class="btn btn-lg btn-outline-success">
-                <i id="simbolo" class="fas fa-times fa-2x"></i>
-            </button>
-        </div>
-        <div class="row mt-4 justify-content-center">
-            <div class="col-3">
-                <div class="form-group">
-                    <label>Dificuldade</label>
-                    <select name="dificuldade" id="dificuldade" class="form-control">
-                        <option value="EASY">EASY</option>
-                        <option value="MEDIUN">MEDIUN</option>
-                        <option value="HARD">HARD</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5 justify-content-center">
-            <div class="col-2">
-                <button id="btnStart" onclick="restart()" class="btn btn-success btn-sm btn-block">
-                    <span id="start">START</span>
-                </button>
-            </div>
-        </div>
+        <!-- TODO: portifolio -->
     </div>
 
-    <script src="js/game.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
