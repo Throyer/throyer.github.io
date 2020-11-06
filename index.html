@@ -1,47 +1,120 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Throyer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <a class="navbar-brand" href="https://throyer.github.io/">
-            <i class="fas fa-laptop-code"></i>
-            Renato Henrique
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://github.com/throyer">
-                        <i class="fas fa-code-branch"></i>
-                        GitHub
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="https://throyer.github.io/">
+        <i class="fas fa-laptop-code"></i>
+        Renato Henrique
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/throyer">
+              <i class="fas fa-code-branch"></i>
+              GitHub
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container">
-        <!-- TODO: portifolio -->
+      <!-- TODO: portifolio -->
+      <div class="row mt-5 justify-content-center">
+        <div class="col-4">
+          <div class="card border-0 shadow-sm">
+            <a
+              href="https://github.com/Throyer/springboot-api-crud"
+              target="_blank"
+            >
+              <img
+                src="https://du0ulnyus7r80.cloudfront.net/wp-content/uploads/2020/02/spring-boot-logo-png-4-transparent.png"
+                class="card-img-top"
+                alt="spring"
+              />
+            </a>
+            <div class="card-body">
+              <hr />
+              <a
+                class="text-decoration-none"
+                href="https://github.com/Throyer/springboot-api-crud"
+                target="_blank"
+              >
+                <p class="text-center text-dark mt-5 font-weight-light">
+                  <i class="fas fa-server mr-3"></i>
+                  Spring Boot API CRUD
+                </p>
+              </a>
+              <p class="text-center">
+                <small
+                  >Spring boot, Spring Security, Spring data, MySQL, Swagger,
+                  JWT e java 11</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 shadow-sm">
+            <a
+              href="https://github.com/Throyer/nodejs-api-crud"
+              target="_blank"
+              class="p-4"
+            >
+              <img
+                src="https://raw.githubusercontent.com/Throyer/nodejs-api-crud/master/assets/node.png"
+                class="card-img-top"
+                alt="node"
+              />
+            </a>
+            <div class="card-body">
+              <hr />
+              <a
+                class="text-decoration-none"
+                href="https://github.com/Throyer/springboot-api-crud"
+                target="_blank"
+              >
+                <p class="text-center text-dark mt-5 font-weight-light">
+                  <i class="fas fa-server mr-3"></i>
+                  Node Js API CRUD
+                </p>
+              </a>
+              <p class="text-center">
+                <small
+                  >Typescript, TypeORM, MySQL, Swagger, Routing Controllers e
+                  JWT</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>
